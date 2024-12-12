@@ -1,0 +1,42 @@
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 10%;
+    background: #2d3250;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}.logo{
+    font-family: "Press Start 2P", serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: small;
+    font-style: normal;
+    text-decoration: none;
+
+  }
+  .navbar a{
+    text-decoration: none;
+    position: relative;
+    font-size: small;
+    color: #ffffff;
+    margin: 10px;
+  }
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    transition: .5s;
+}
+.navbar a:hover::before{
+    width: 100%;
+}
